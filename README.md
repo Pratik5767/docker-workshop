@@ -1,7 +1,7 @@
-# Docker and PostgreSQL: Data Engineering Workshop
+# Data Engineering using Docker and PostgreSQL
 
 
-In this workshop, we will explore Docker fundamentals and data engineering workflows using Docker containers.
+We will explore Docker fundamentals and data engineering workflows using Docker containers.
 
 **Data Engineering** is the design and development of systems for collecting, storing and analyzing data at scale.
 
@@ -196,16 +196,7 @@ You'll see the files from your host machine are accessible in the container!
 
 A **data pipeline** is a service that receives data as input and outputs more data. For example, reading a CSV file, transforming the data somehow and storing it as a table in a PostgreSQL database.
 
-```mermaid
-graph LR
-    A[CSV File] --> B[Data Pipeline]
-    B --> C[Parquet File]
-    B --> D[PostgreSQL Database]
-    B --> E[Data Warehouse]
-    style B fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
-```
-
-In this workshop, we'll build pipelines that:
+We'll build pipelines that:
 - Download CSV data from the web
 - Transform and clean the data with pandas
 - Load it into PostgreSQL for querying
